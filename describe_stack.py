@@ -17,8 +17,8 @@ options:
         required: true
     fail_mode:
         description:
-            - when false, succeeds but sets no_stack to true
-            - Always fails when stack is in a failure state.
+            - when false, succeeds but sets no_stack to true.
+            - Always fails when stack exists but is in a failure state.
         default: true
 outputs:
     no_stack:
