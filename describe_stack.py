@@ -53,7 +53,7 @@ def main():
     argument_spec = ec2_argument_spec()
     argument_spec.update(dict(
             stack_name  = dict(required=True),
-            fail_mode   = dict(default=True, choices=BOOLEANS),
+            fail_mode   = dict(default=True, choices=BOOLEANS, type='bool'),
             region      = dict(default='ap-southeast-2')
         )
     )
